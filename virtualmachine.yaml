@@ -1,0 +1,13 @@
+apiVersion: infra.idpprovider.crossplane.io/v1alpha1
+kind: VirtualMachine
+spec:
+  forProvider:
+    configurableField: idpprovider
+    name: xcpamidas900
+    cpus: 4
+    memory: 2
+    os_template: Red Hat 9.2
+  providerConfigRef:
+    name: example  
+metadata:
+  name: xcpamidas900

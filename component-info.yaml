@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+spec:
+  name: "xcpamidas900"
+  cpus: "4"
+  memory: "2"
+  os_template: "Red Hat 9.2"
+  type:  infra
+  lifecycle: production
+  owner: sara
+metadata:
+  name: "xcpamidas900"
+  annotations:
+    argocd/app-name: xcpamidas900
+  tags:
+    - virtualmachine
+  links:
+    - url: https://www.google.es
+      title: Website
+      icon: Website
